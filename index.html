@@ -1,9 +1,35 @@
 <!DOCTYPE html>
-<html lang="te">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🌍 Dino History - 200+ Dinosaurs </title>
+    
+    <!-- Primary Meta Tags -->
+    <title>🦖 Dino History - Explore 200+ Dinosaurs in Telugu</title>
+    <meta name="description" content="Discover 200+ dinosaurs with detailed history, facts, size comparisons, and images. From T-Rex to Spinosaurus - the ultimate dinosaur database for Telugu audiences!" />
+    <meta name="keywords" content="dinosaurs, dinosaur history, T-Rex, Spinosaurus, Triceratops, Velociraptor, Stegosaurus, prehistoric, paleontology, Telugu dinosaurs" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Dino History" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="🦖 Dino History - 200+ Dinosaurs" />
+    <meta property="og:description" content="Explore 200+ dinosaurs with detailed history and scientific facts. Complete dinosaur database in Telugu!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pixelforge23.github.io/Dino-History/" />
+    <meta property="og:image" content="https://pixelforge23.github.io/Dino-History/og-image.jpg" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="🦖 Dino History - 200+ Dinosaurs" />
+    <meta name="twitter:description" content="Explore 200+ dinosaurs with detailed history and scientific facts." />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦖</text></svg>" />
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦖</text></svg>" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://pixelforge23.github.io/Dino-History/" />
+    
     <style>
         * {
             margin: 0;
@@ -94,6 +120,34 @@
             font-weight: 700;
         }
 
+        /* Navigation */
+        .main-nav {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 15px 0;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #2a2a3e;
+            border-top: 1px solid #2a2a3e;
+            background: #0d0d18;
+            border-radius: 12px;
+        }
+        .main-nav a {
+            color: #f5a623;
+            text-decoration: none;
+            padding: 8px 20px;
+            border-radius: 50px;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+            border: 1px solid transparent;
+        }
+        .main-nav a:hover {
+            background: #f5a62322;
+            border-color: #f5a62344;
+            transform: translateY(-2px);
+        }
+
         .controls {
             display: flex;
             flex-wrap: wrap;
@@ -164,6 +218,79 @@
         .btn-list:hover {
             background: #88ccff22;
             transform: translateY(-3px);
+        }
+
+        /* Permanent Content - SEO */
+        .permanent-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .permanent-content .info-card {
+            background: #14141e;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #f5a62333;
+            transition: all 0.3s;
+        }
+        .permanent-content .info-card:hover {
+            transform: translateY(-5px);
+            border-color: #f5a62366;
+            box-shadow: 0 10px 30px rgba(245, 166, 35, 0.1);
+        }
+        .permanent-content .info-card .icon {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .permanent-content .info-card h3 {
+            color: #f5a623;
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        .permanent-content .info-card p {
+            color: #888;
+            font-size: 0.85rem;
+        }
+
+        /* Welcome / About Section */
+        .welcome-section {
+            background: linear-gradient(145deg, #14141e, #1a1a2e);
+            border-radius: 16px;
+            padding: 25px 30px;
+            margin-bottom: 30px;
+            border: 1px solid #2a2a3e;
+            border-left: 4px solid #f5a623;
+        }
+        .welcome-section h2 {
+            color: #f5a623;
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+        }
+        .welcome-section p {
+            color: #ccc;
+            line-height: 1.8;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+        .welcome-section ul {
+            list-style: none;
+            padding: 5px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 8px;
+        }
+        .welcome-section ul li {
+            color: #aaa;
+            padding: 5px 10px;
+            background: #0d0d18;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+        .welcome-section ul li strong {
+            color: #f5a623;
         }
 
         .content-card {
@@ -348,6 +475,42 @@
             border-color: #f5a623;
         }
 
+        /* Social Sharing */
+        .social-share {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            padding: 15px 0;
+            flex-wrap: wrap;
+        }
+        .social-share a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+        .social-share a:hover {
+            transform: translateY(-3px);
+        }
+        .social-share .twitter {
+            background: #1DA1F2;
+        }
+        .social-share .facebook {
+            background: #1877F2;
+        }
+        .social-share .whatsapp {
+            background: #25D366;
+        }
+        .social-share .telegram {
+            background: #0088cc;
+        }
+
         @media (max-width: 600px) {
             .header h1 {
                 font-size: 2rem;
@@ -374,6 +537,19 @@
             .dino-image-wrapper img {
                 max-height: 200px;
             }
+            .permanent-content {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+            .main-nav a {
+                font-size: 0.8rem;
+                padding: 6px 12px;
+            }
+            .welcome-section {
+                padding: 18px;
+            }
+            .welcome-section ul {
+                grid-template-columns: 1fr;
+            }
         }
 
         .footer {
@@ -382,6 +558,21 @@
             font-size: 0.85rem;
             padding: 30px 0 10px;
             border-top: 1px solid #1a1a2e;
+        }
+        .footer .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+        .footer .footer-links a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer .footer-links a:hover {
+            color: #f5a623;
         }
         .dino-count {
             color: #f5a623;
@@ -392,10 +583,20 @@
 <body>
 
     <header class="header">
-        <h1>🦖 Dino Histry</h1>
+        <h1>🦖 Dino History - 200+ Dinosaurs</h1>
         <p>🔥 Instant Telugu Content for <span class="dino-count" id="dinoCount">200+</span> Dinosaurs • Free</p>
-        <div class="badge">⚡ Type any dinosaur name • Get full History </div>
+        <div class="badge">⚡ Type any dinosaur name • Get full History in Telugu</div>
     </header>
+
+    <!-- Navigation - Internal Links for SEO -->
+    <nav class="main-nav" aria-label="Main Navigation">
+        <a href="#welcome">🏠 Home</a>
+        <a href="#popular">⭐ Popular Dinosaurs</a>
+        <a href="#all">📋 All Dinosaurs</a>
+        <a href="#facts">💡 Dino Facts</a>
+        <a href="#about">📖 About</a>
+        <a href="#contact">📧 Contact</a>
+    </nav>
 
     <div class="controls">
         <input type="text" id="dinoInput" placeholder="Type a dinosaur name... e.g. T-Rex, Spinosaurus, Triceratops" value="Tyrannosaurus Rex" />
@@ -406,13 +607,179 @@
 
     <div id="dinoListContainer" style="display:none; margin-bottom:20px;"></div>
 
+    <!-- ============================================================ -->
+    <!-- PERMANENT CONTENT - SEO IMPROVEMENT (250+ words)              -->
+    <!-- ============================================================ -->
+
+    <!-- Welcome / About Section -->
+    <section id="welcome" class="welcome-section">
+        <h2>🦕 Welcome to Dino History - The Ultimate Dinosaur Database</h2>
+        <p>
+            <strong>Dino History</strong> is the most comprehensive dinosaur resource in Telugu, featuring over <strong>200 prehistoric creatures</strong> from the Triassic, Jurassic, and Cretaceous periods. Whether you're a student, teacher, or dinosaur enthusiast, our database provides detailed information about each species including their <strong>discovery history, scientific classification, size, diet, and unique characteristics</strong>.
+        </p>
+        <p>
+            From the mighty <strong>Tyrannosaurus Rex</strong> to the giant <strong>Argentinosaurus</strong>, the intelligent <strong>Velociraptor</strong> to the armored <strong>Ankylosaurus</strong> - every dinosaur has a fascinating story to tell. Our content is <strong>fact-checked</strong> and updated regularly with the latest paleontological discoveries.
+        </p>
+        <p><strong>What you'll find for each dinosaur:</strong></p>
+        <ul>
+            <li>🔍 <strong>Discovery History</strong> - When and where it was found</li>
+            <li>📅 <strong>Time Period</strong> - When it lived on Earth</li>
+            <li>📏 <strong>Size & Weight</strong> - Complete physical measurements</li>
+            <li>🍖 <strong>Diet</strong> - Carnivore, Herbivore, or Omnivore</li>
+            <li>🌍 <strong>Location</strong> - Where its fossils were discovered</li>
+            <li>✨ <strong>Unique Features</strong> - What makes it special</li>
+            <li>💡 <strong>Interesting Facts</strong> - Fun and surprising information</li>
+            <li>🖼️ <strong>Images</strong> - Visual references from Wikipedia</li>
+        </ul>
+        <p style="margin-top: 10px; color: #888;">
+            <strong>💡 Tip:</strong> Type any dinosaur name in the search box above or click "Random" to discover a new dinosaur today!
+        </p>
+    </section>
+
+    <!-- Featured / Popular Dinosaurs Section -->
+    <section id="popular">
+        <div class="permanent-content">
+            <div class="info-card">
+                <span class="icon">🦖</span>
+                <h3>Tyrannosaurus Rex</h3>
+                <p>The King of Dinosaurs • 40 feet long • 7-9 tons</p>
+            </div>
+            <div class="info-card">
+                <span class="icon">🐊</span>
+                <h3>Spinosaurus</h3>
+                <p>Largest Carnivore • 50-59 feet • Semi-aquatic</p>
+            </div>
+            <div class="info-card">
+                <span class="icon">🦏</span>
+                <h3>Triceratops</h3>
+                <p>Three-Horned Face • 26-30 feet • 6-12 tons</p>
+            </div>
+            <div class="info-card">
+                <span class="icon">🦕</span>
+                <h3>Brachiosaurus</h3>
+                <p>Tallest Dinosaur • 85 feet • 30-60 tons</p>
+            </div>
+            <div class="info-card">
+                <span class="icon">🧩</span>
+                <h3>Stegosaurus</h3>
+                <p>Plated Dinosaur • 30 feet • 5-7 tons</p>
+            </div>
+            <div class="info-card">
+                <span class="icon">💪</span>
+                <h3>Ankylosaurus</h3>
+                <p>Armored Dinosaur • 30 feet • 4-6 tons</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dino Facts Section -->
+    <section id="facts" style="margin-bottom:30px;">
+        <div class="content-card" style="border-left:4px solid #ff6b35;">
+            <div class="section-title">💡 Amazing Dinosaur Facts <span>Did You Know?</span></div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;">
+                <div style="background:#0d0d18;padding:15px;border-radius:10px;border-left:3px solid #f5a623;">
+                    <strong style="color:#f5a623;">🦖 Largest Dinosaur</strong>
+                    <p style="color:#aaa;font-size:0.9rem;margin-top:5px;">Argentinosaurus weighed up to 100 tons - that's 10-12 elephants!</p>
+                </div>
+                <div style="background:#0d0d18;padding:15px;border-radius:10px;border-left:3px solid #ff6b35;">
+                    <strong style="color:#ff6b35;">🦅 Smallest Dinosaur</strong>
+                    <p style="color:#aaa;font-size:0.9rem;margin-top:5px;">Compsognathus was only 3 feet long and weighed just 6.6 lbs - the size of a chicken!</p>
+                </div>
+                <div style="background:#0d0d18;padding:15px;border-radius:10px;border-left:3px solid #88ccff;">
+                    <strong style="color:#88ccff;">🧠 Smartest Dinosaur</strong>
+                    <p style="color:#aaa;font-size:0.9rem;margin-top:5px;">Troodon had the largest brain-to-body ratio and may have been as intelligent as a modern bird.</p>
+                </div>
+                <div style="background:#0d0d18;padding:15px;border-radius:10px;border-left:3px solid #4CAF50;">
+                    <strong style="color:#4CAF50;">🏃 Fastest Dinosaur</strong>
+                    <p style="color:#aaa;font-size:0.9rem;margin-top:5px;">Gallimimus could run up to 40 mph - faster than most modern animals!</p>
+                </div>
+                <div style="background:#0d0d18;padding:15px;border-radius:10px;border-left:3px solid #e91e63;">
+                    <strong style="color:#e91e63;">⏰ Longest Lived</strong>
+                    <p style="color:#aaa;font-size:0.9rem;margin-top:5px;">Some sauropods lived for 70-80 years, similar to modern elephants.</p>
+                </div>
+                <div style="background:#0d0d18;padding:15px;border-radius:10px;border-left:3px solid #9C27B0;">
+                    <strong style="color:#9C27B0;">🌍 Most Widespread</strong>
+                    <p style="color:#aaa;font-size:0.9rem;margin-top:5px;">Allosaurus fossils have been found on three continents - North America, Europe, and Africa!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" style="margin-bottom:30px;">
+        <div class="content-card" style="border-left:4px solid #f5a623;">
+            <div class="section-title">📖 About Dino History</div>
+            <p style="color:#ccc;line-height:1.8;margin-bottom:10px;">
+                <strong>Dino History</strong> is a passion project created to make <strong>dinosaur education accessible</strong> to Telugu-speaking audiences worldwide. We believe that learning about Earth's prehistoric past should be <strong>free, fun, and informative</strong> for everyone.
+            </p>
+            <p style="color:#ccc;line-height:1.8;margin-bottom:10px;">
+                Our database is carefully curated with <strong>scientifically accurate information</strong> sourced from reputable paleontological research. Each dinosaur entry includes verified facts about its discovery, physical characteristics, habitat, and behavior.
+            </p>
+            <p style="color:#ccc;line-height:1.8;">
+                🧡 <strong>We're adding new dinosaurs regularly!</strong> Currently featuring <span class="dino-count" id="dinoCount2">200+</span> species with more being added every week.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- DYNAMIC CONTENT OUTPUT                                       -->
+    <!-- ============================================================ -->
+
     <div id="output"></div>
 
-    <div class="footer">
-        Made with 🧡 for Dino Lovers • 200+ Dinosaurs Updated 2026
+    <!-- Social Sharing -->
+    <div class="social-share">
+        <a href="#" class="twitter" onclick="shareOnTwitter()" target="_blank">🐦 Twitter</a>
+        <a href="#" class="facebook" onclick="shareOnFacebook()" target="_blank">📘 Facebook</a>
+        <a href="#" class="whatsapp" onclick="shareOnWhatsApp()" target="_blank">💬 WhatsApp</a>
+        <a href="#" class="telegram" onclick="shareOnTelegram()" target="_blank">✈️ Telegram</a>
     </div>
 
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#welcome">Home</a>
+            <a href="#popular">Popular</a>
+            <a href="#all">All Dinosaurs</a>
+            <a href="#facts">Facts</a>
+            <a href="#about">About</a>
+            <a href="https://github.com/pixelforge23/Dino-History" target="_blank">GitHub</a>
+        </div>
+        <p>
+            Made with 🧡 for Dino Lovers • <span class="dino-count" id="dinoCount3">200+</span> Dinosaurs Updated 2026
+        </p>
+        <p style="font-size:0.75rem;color:#333;margin-top:5px;">
+            All content is for educational purposes. Images sourced from Wikipedia.
+        </p>
+    </footer>
+
     <script>
+        // ============================================================
+        //  SOCIAL SHARING FUNCTIONS
+        // ============================================================
+
+        function shareOnTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('🦖 Check out this amazing dinosaur! Discover 200+ dinosaurs with full history at Dino History!');
+            window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
+        }
+
+        function shareOnFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+        }
+
+        function shareOnWhatsApp() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('🦖 Check out Dino History - 200+ Dinosaurs with full details!');
+            window.open(`https://api.whatsapp.com/send?text=${text}%20${url}`, '_blank');
+        }
+
+        function shareOnTelegram() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('🦖 Dino History - Explore 200+ Dinosaurs!');
+            window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
+        }
+
         // ============================================================
         //  COMPLETE DINOSAUR DATABASE - 200+ DINOSAURS
         // ============================================================
@@ -1538,7 +1905,7 @@
             const container = document.getElementById('dinoListContainer');
             if (container.style.display === 'none') {
                 let html =
-                    `<div class="content-card">
+                    `<div class="content-card" id="all">
                     <div class="section-title">📋 All Dinosaurs <span>${Object.keys(DINOSAURS).length}+</span></div>
                     <input class="search-box" id="dinoSearch" placeholder="🔍 Search dinosaurs..." onkeyup="filterDinoList()">
                     <div class="dino-list-grid" id="dinoListGrid">`;
@@ -1555,6 +1922,8 @@
                 container.innerHTML = html;
                 container.style.display = 'block';
                 document.getElementById('dinoCount').textContent = count + '+';
+                document.getElementById('dinoCount2').textContent = count + '+';
+                document.getElementById('dinoCount3').textContent = count + '+';
             } else {
                 container.style.display = 'none';
             }
@@ -1583,6 +1952,8 @@
         window.onload = function() {
             const count = Object.keys(DINOSAURS).length;
             document.getElementById('dinoCount').textContent = count + '+';
+            document.getElementById('dinoCount2').textContent = count + '+';
+            document.getElementById('dinoCount3').textContent = count + '+';
             generateContent();
         };
 
